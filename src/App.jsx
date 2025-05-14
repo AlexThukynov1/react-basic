@@ -8,10 +8,12 @@ const movie = {
   release_date: "11-05-24",
   src: ""
 }
+const isVisible = false
 
   return (
       <div>
         <MovieCard movie={movie}/>
+        {isVisible? <MovieCard movie={movie}/> : 'Not visible'}
       </div>
   )
 }
